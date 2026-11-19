@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090d1c;
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #141b33;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header span {
+    color: #49e6ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #49e6ff;
+}
+
+.hero {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #21164b, #36144c);
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #49e6ff;
+}
+
+.hero h2 {
+    margin: 20px;
+    color: #ff4fc8;
+}
+
+.hero p {
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #49e6ff;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.btn:hover {
+    background: #ff4fc8;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h1 {
+    margin-bottom: 30px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #141b33;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.card h2 {
+    font-size: 40px;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    margin: 15px;
+    color: #aaa;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 8px;
+    justify-content: center;
+    margin: 25px;
+}
+
+.cell {
+    height: 80px;
+    width: 80px;
+    background: #141b33;
+    color: #49e6ff;
+    border: 2px solid #49e6ff;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #29234b;
+}
+
+footer {
+    background: #141b33;
+    padding: 25px;
+    color: #aaa;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
